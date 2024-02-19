@@ -7,13 +7,14 @@ import lombok.*;
 @Entity
 @Getter
 @Setter
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class Board extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long no;
+    private Long bno;
 
     @Column(length = 500, nullable = false)
     private String title;
@@ -24,6 +25,9 @@ public class Board extends BaseEntity {
     private String boardType;
 
     private String writer;
+
+    @Column
+    private Long fileId;
 
     public void create(String title, String content, String writer) {
         this.title = title;
