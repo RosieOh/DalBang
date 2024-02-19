@@ -1,0 +1,50 @@
+2024-01-31 15:15:59.911 INFO  [background-preinit] [o.h.validator.internal.util.Version] - HV000001: Hibernate Validator 8.0.1.Final
+2024-01-31 15:15:59.957 INFO  [main] [com.dalbang.DalbangApplication] - Starting DalbangApplication using Java 17.0.8 with PID 1714 (/Users/otaehun/Desktop/프로젝트/dalbang/build/classes/java/main started by otaehun in /Users/otaehun/Desktop/프로젝트/dalbang)
+2024-01-31 15:15:59.961 INFO  [main] [com.dalbang.DalbangApplication] - No active profile set, falling back to 1 default profile: "default"
+2024-01-31 15:16:00.861 INFO  [main] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-31 15:16:00.944 INFO  [main] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 78 ms. Found 2 JPA repository interfaces.
+2024-01-31 15:16:01.471 INFO  [main] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port 8089 (http)
+2024-01-31 15:16:01.480 INFO  [main] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8089"]
+2024-01-31 15:16:01.481 INFO  [main] [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2024-01-31 15:16:01.481 INFO  [main] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-01-31 15:16:01.526 INFO  [main] [o.a.c.c.C.[.[localhost].[/dalbang]] - Initializing Spring embedded WebApplicationContext
+2024-01-31 15:16:01.526 INFO  [main] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1509 ms
+2024-01-31 15:16:01.647 INFO  [main] [o.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-31 15:16:01.699 INFO  [main] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-31 15:16:01.731 INFO  [main] [o.h.c.internal.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+2024-01-31 15:16:01.948 INFO  [main] [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-31 15:16:01.969 INFO  [main] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2024-01-31 15:16:02.078 INFO  [main] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@7548e1fb
+2024-01-31 15:16:02.080 INFO  [main] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2024-01-31 15:16:02.754 INFO  [main] [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-31 15:16:02.832 INFO  [main] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-31 15:16:03.312 WARN  [main] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-31 15:16:03.513 INFO  [main] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@159a0f0e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6484364f, org.springframework.security.web.context.SecurityContextHolderFilter@4645a575, org.springframework.security.web.header.HeaderWriterFilter@3b9c05f, org.springframework.web.filter.CorsFilter@2ddb6c71, org.springframework.web.filter.CorsFilter@29f114e0, org.springframework.security.web.authentication.logout.LogoutFilter@4e93d23e, com.dalbang.global.security.jwt.JwtAuthenticationFilter@782e0844, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6bf70600, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ca5da54, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c569caf, org.springframework.security.web.access.ExceptionTranslationFilter@27adb90f, org.springframework.security.web.access.intercept.AuthorizationFilter@4411a0fe]
+2024-01-31 15:16:03.523 WARN  [main] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/h2-console/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-01-31 15:16:03.523 INFO  [main] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/h2-console/**']
+2024-01-31 15:16:03.523 WARN  [main] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/favicon.ico']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-01-31 15:16:03.523 INFO  [main] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/favicon.ico']
+2024-01-31 15:16:03.523 WARN  [main] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-01-31 15:16:03.523 INFO  [main] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2024-01-31 15:16:03.523 WARN  [main] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-01-31 15:16:03.523 INFO  [main] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2024-01-31 15:16:03.523 WARN  [main] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/img/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-01-31 15:16:03.523 INFO  [main] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/img/**']
+2024-01-31 15:16:03.523 WARN  [main] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/lib/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-01-31 15:16:03.524 INFO  [main] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/lib/**']
+2024-01-31 15:16:03.741 INFO  [main] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8089"]
+2024-01-31 15:16:03.759 INFO  [main] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port 8089 (http) with context path '/dalbang'
+2024-01-31 15:16:03.771 INFO  [main] [com.dalbang.DalbangApplication] - Started DalbangApplication in 4.206 seconds (process running for 5.331)
+2024-01-31 15:45:26.708 WARN  [HikariPool-1 housekeeper] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m24s458ms).
+2024-01-31 15:49:44.770 WARN  [HikariPool-1 housekeeper] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m18s64ms).
+2024-01-31 16:41:01.870 WARN  [HikariPool-1 housekeeper] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m16s825ms).
+2024-01-31 16:56:15.721 WARN  [HikariPool-1 housekeeper] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m13s852ms).
+2024-01-31 17:10:10.445 WARN  [HikariPool-1 housekeeper] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m24s681ms).
+2024-01-31 18:45:43.686 WARN  [HikariPool-1 housekeeper] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h8m3s110ms).
+2024-01-31 19:54:49.680 WARN  [HikariPool-1 housekeeper] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h9m5s995ms).
+2024-01-31 20:32:43.847 WARN  [HikariPool-1 housekeeper] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=37m54s167ms).
+2024-01-31 20:36:01.211 WARN  [HikariPool-1 housekeeper] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m17s364ms).
+2024-01-31 20:56:49.831 WARN  [HikariPool-1 housekeeper] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m48s620ms).
+2024-01-31 22:41:45.492 WARN  [HikariPool-1 housekeeper] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h44m55s661ms).
+2024-01-31 23:04:13.276 WARN  [HikariPool-1 housekeeper] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m27s782ms).
+2024-01-31 23:04:43.146 WARN  [HikariPool-1 housekeeper] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s864ms), soft-evicting connections from pool.
