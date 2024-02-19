@@ -44,8 +44,19 @@ docker run -d --name my_app_container springbootapp
 
 # 트러블 슈팅
 
+<details>
+ <summary><b>GlobalExceptionHandler에서의 of 메서드 오류</b></summary>
 
-<hr>
+>  ErrorResponse 클래스에 of 메서드가 없어서 해당 오류가 발생
+- GlobalExceptionHandler에서 ErrorResponse 호출 시 미 호출로 인한 해당 오류가 발생
+
+## 원인이 뭘까? 🧐
+> import com.dalbang.global.error.*; <- 이게 아닌 import org.springframework.web.ErrorResponse; 자체 내장 클래스로 지정되어서 호출이 되지 않았음
+
+## 어떻게 해결하나요? 🧐
+> import의 경로 수정
+- import com.dalbang.global.error.*; 로 수정
+</details>
 
 ## 💡 Commit Convention
 
