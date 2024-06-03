@@ -15,7 +15,7 @@ import java.util.List;
 @NoArgsConstructor
 public class BoardDTO {
 
-    private Long bno;
+    private Long id;
 
     @NotEmpty
     @Size(max = 200)
@@ -29,24 +29,19 @@ public class BoardDTO {
     @Size(max = 50)
     private String boardType;
 
-    @NotNull
-    private Long fileId;
-
     @NotEmpty
     @Size(max = 50)
     private String writer;
 
-    private LocalDateTime regDate;
+    private List<Long> fileIds;
 
-    private LocalDateTime modDate;
+    private LocalDateTime createdTime;
 
-    private List<String> fileNames;
+    private LocalDateTime modifiedTime;
 
-    public Long getBno() {
-        return bno;
-    }
+    private boolean pinned;
 
-    public void setBno(Long bno) {
-        this.bno = bno;
-    }
+    private boolean privated;
+
+    private boolean deleteType;
 }
